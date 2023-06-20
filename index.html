@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   
+    
+        
+  <div class="container">
+    <div class="card">
+      <span class="length-heading">LENGTH</span>
+      <span class="converter-heading">CONVERTER</span>
+    <div class="input-group">
+      <input type="number" id="inputValue" placeholder="Enter length">
+      <select id="fromUnit">
+        <option value="mm">Millimeter (mm)</option>
+        <option value="cm">Centimeter (cm)</option>
+        <option value="m">Meter (m)</option>
+        <option value="km">Kilometer (km)</option>
+        <option value="inch">Inch (in)</option>
+        <option value="ft">Foot (ft)</option>
+        <option value="yard">Yard (yd)</option>
+        <option value="mile">Mile (mi)</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <input type="number" id="outputValue" placeholder="Converted length" disabled>
+      <select id="toUnit">
+        <option value="mm">Millimeter (mm)</option>
+        <option value="cm">Centimeter (cm)</option>
+        <option value="m">Meter (m)</option>
+        <option value="km">Kilometer (km)</option>
+        <option value="inch">Inch (in)</option>
+        <option value="ft">Foot (ft)</option>
+        <option value="yard">Yard (yd)</option>
+        <option value="mile">Mile (mi)</option>
+      </select>
+    </div>
+    <button onclick="convertLength()">Convert</button>
+    <button onclick="resetFields()">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+  </div>
+  </div>
+</body>
+</html>
